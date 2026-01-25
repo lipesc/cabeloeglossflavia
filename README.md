@@ -1,4 +1,4 @@
-# Landing Page — Salão X
+# Landing Page — Salão v1 testes
 
 Projeto Next.js (App Router) com TypeScript e Tailwind para uma landing page single-scroll focada em conversão mobile-first.
 
