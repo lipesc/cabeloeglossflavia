@@ -30,6 +30,7 @@ jobs:
         env:
           NEXT_PUBLIC_IS_STATIC: 'true'
           NEXT_PUBLIC_ENABLE_PWA: 'true'
+          NEXT_PUBLIC_GTM_ID: 'GTM-NQ2HXDS6'
         run: npm run build
 
       - name: Add .nojekyll to disable Jekyll on Pages
