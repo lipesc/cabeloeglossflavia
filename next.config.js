@@ -10,19 +10,20 @@ const withPWA = require("next-pwa")({
 const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === "true";
 
 const nextConfig = {
-  reactStrictMode: true,
-  // Use static export only when explicitly requested to avoid image optimizer conflicts
-  output: isStatic ? "export" : undefined,
-  // Base path and asset prefix for project pages: https://lipesc.github.io/cabeloeglossflavia
-  // basePath: isStatic ? "/cabeloeglossflavia" : undefined,
-  // assetPrefix: isStatic ? "/cabeloeglossflavia" : undefined,
-  // Ensure directories render with index.html for static hosting
-  trailingSlash: true,
-  images: {
-    formats: ["image/avif", "image/webp"],
-    // Next Image optimization is not supported with static export
-    unoptimized: isStatic,
-  },
+    output: 'export',
+  // reactStrictMode: true,
+  // // Use static export only when explicitly requested to avoid image optimizer conflicts
+  // output: isStatic ? "export" : undefined,
+  // // Base path and asset prefix for project pages: https://lipesc.github.io/cabeloeglossflavia
+  // // basePath: isStatic ? "/cabeloeglossflavia" : undefined,
+  // // assetPrefix: isStatic ? "/cabeloeglossflavia" : undefined,
+  // // Ensure directories render with index.html for static hosting
+  // trailingSlash: true,
+  // images: {
+  //   formats: ["image/avif", "image/webp"],
+  //   // Next Image optimization is not supported with static export
+  //   unoptimized: isStatic,
+  // },
 };
 
 module.exports = withPWA(nextConfig);
