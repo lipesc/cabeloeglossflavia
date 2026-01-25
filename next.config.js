@@ -15,12 +15,12 @@ const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === "true";
 const nextConfig = {
   reactStrictMode: true,
   // Use static export on GitHub Pages builds
-  output: isStatic ? "export" : undefined,
+  output: "export",
   // Base path and asset prefix for project pages: https://lipesc.github.io/cabeloeglossflavia
-  basePath: isStatic ? "/cabeloeglossflavia" : undefined,
-  assetPrefix: isStatic ? "/cabeloeglossflavia" : undefined,
+  // basePath: isStatic ? "/cabeloeglossflavia" : undefined,
+  // assetPrefix: isStatic ? "/cabeloeglossflavia" : undefined,
   // Ensure directories render with index.html for static hosting
-  trailingSlash: isStatic ? true : undefined,
+  trailingSlash: true,
   images: {
     formats: ["image/avif", "image/webp"],
     // Next Image optimization is not supported with static export
