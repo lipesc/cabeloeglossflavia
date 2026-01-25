@@ -26,6 +26,9 @@ jobs:
         env:
           NEXT_PUBLIC_IS_STATIC: 'true'
           NEXT_PUBLIC_ENABLE_PWA: 'true'
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: lipesc-corp
+          SENTRY_PROJECT: javascript-nextjs
         run: npm run build
 
       - name: Add .nojekyll to disable Jekyll on Pages
