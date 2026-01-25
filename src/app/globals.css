@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-base: 32 48% 97%;
+  --color-surface: 0 0% 100%;
+  --color-ink: 224 24% 18%;
+  --color-muted: 218 14% 42%;
+  --color-accent: 8 78% 52%;
+  --color-accent-2: 28 88% 56%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: hsl(var(--color-ink));
+  background:
+    radial-gradient(70% 60% at 10% 10%, rgba(255, 214, 188, 0.7), transparent 60%),
+    radial-gradient(80% 70% at 90% 0%, rgba(255, 233, 201, 0.7), transparent 60%),
+    linear-gradient(180deg, #fff7f0 0%, #fff 45%, #fff7f0 100%);
+  min-height: 100vh;
+}
+
+section {
+  scroll-margin-top: 96px;
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/60 bg-white/80 px-4 py-2 text-sm font-medium text-ink shadow-soft;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-semibold text-ink md:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mt-3 max-w-2xl text-base text-muted md:text-lg;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:translate-y-[-1px] hover:bg-[#df3d2a] focus:outline-none focus:ring-2 focus:ring-accent/40 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-accent/30 bg-white px-6 py-3 text-sm font-semibold text-ink shadow-soft transition hover:translate-y-[-1px] hover:border-accent/60 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-white/60 bg-white/70 px-4 py-2 text-sm font-semibold text-ink shadow-soft transition hover:translate-y-[-1px];
+  }
+}
