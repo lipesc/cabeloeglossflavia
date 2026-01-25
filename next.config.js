@@ -1,12 +1,9 @@
 const withPWA = require("next-pwa")({
   dest: "public",
-  register: true,
+  register: process.env.NEXT_PUBLIC_ENABLE_PWA === "true",
   skipWaiting: true,
-  // Disable PWA in dev; enable for static export only when explicitly opted in
-  disable:
-    process.env.NODE_ENV === "development" ||
-    (process.env.NEXT_PUBLIC_IS_STATIC === "true" &&
-      process.env.NEXT_PUBLIC_ENABLE_PWA !== "true"),
+  // Disable PWA unless explicitly enabled via NEXT_PUBLIC_ENABLE_PWA=true
+  disable: process.env.NEXT_PUBLIC_ENABLE_PWA !== "true" || process.env.NODE_ENV === "development",
 });
 
 /** @type {import('next').NextConfig} */
@@ -30,8 +27,6 @@ const nextConfig = {
 
 module.exports = withPWA(nextConfig);
 
-
-// Injected content via Sentry wizard below
 
 const { withSentryConfig } = require("@sentry/nextjs");
 

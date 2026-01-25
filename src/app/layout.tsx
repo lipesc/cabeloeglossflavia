@@ -8,6 +8,8 @@ import { siteContent } from "@/content/siteContent";
 import { GTM_ID } from "@/lib/gtm";
 import { getAssetPath } from "@/lib/paths";
 
+import * as Sentry from '@sentry/nextjs';
+
 const display = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
@@ -30,8 +32,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   manifest: getAssetPath("/manifest.webmanifest"),
   icons: {
-    icon: getAssetPath("/icons/icon-192.png"),
-    apple: getAssetPath("/icons/icon-192.png"),
+    icon: getAssetPath("/icons/icon-192-v2.png"),
+    apple: getAssetPath("/icons/icon-192-v2.png"),
   },
   openGraph: {
     title: siteContent.seo.title,
@@ -53,6 +55,9 @@ export const metadata: Metadata = {
     description: siteContent.seo.description,
     images: [siteContent.seo.ogImage],
   },
+  other: {
+  ...Sentry.getTraceData()
+}
 };
 
 export const viewport: Viewport = {
@@ -61,9 +66,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="pt-BR" className={`${display.variable} ${sans.variable}`}>
       <body className="bg-base text-ink">
@@ -88,6 +93,7 @@ export default function RootLayout({
                 height="0"
                 width="0"
                 style={{ display: "none", visibility: "hidden" }}
+                title="Google Tag Manager"
               />
             </noscript>
           </>
