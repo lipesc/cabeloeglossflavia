@@ -6,6 +6,7 @@ import { Playfair_Display, Manrope } from "next/font/google";
 
 import { siteContent } from "@/content/siteContent";
 import { GTM_ID } from "@/lib/gtm";
+import { getAssetPath } from "@/lib/paths";
 
 const display = Playfair_Display({
   subsets: ["latin"],
@@ -27,10 +28,10 @@ export const metadata: Metadata = {
   title: siteContent.seo.title,
   description: siteContent.seo.description,
   metadataBase: new URL(siteUrl),
-  manifest: "/manifest.webmanifest",
+  manifest: getAssetPath("/manifest.webmanifest"),
   icons: {
-    icon: "/icons/icon-192.png",
-    apple: "/icons/icon-192.png",
+    icon: getAssetPath("/icons/icon-192.png"),
+    apple: getAssetPath("/icons/icon-192.png"),
   },
   openGraph: {
     title: siteContent.seo.title,

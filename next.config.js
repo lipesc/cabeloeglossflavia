@@ -16,9 +16,9 @@ const nextConfig = {
   reactStrictMode: true,
   // Use static export on GitHub Pages builds
   output: isStatic ? "export" : undefined,
-  // Base path and asset prefix for project pages: https://username.github.io/salao_projeto_v1
+  // Base path and asset prefix for project pages: https://lipesc.github.io/salao_projeto_v1
   basePath: isStatic ? "/salao_projeto_v1" : undefined,
-  assetPrefix: isStatic ? "/salao_projeto_v1/" : undefined,
+  assetPrefix: isStatic ? "/salao_projeto_v1" : undefined,
   // Ensure directories render with index.html for static hosting
   trailingSlash: isStatic ? true : undefined,
   images: {

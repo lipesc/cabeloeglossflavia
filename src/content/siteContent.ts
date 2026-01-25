@@ -28,6 +28,11 @@ export type BeforeAfterPhoto = {
   caption?: string;
 };
 
+import { getAssetPath } from "@/lib/paths";
+
+// Helper to add basePath to image URLs
+const img = (path: string) => getAssetPath(path);
+
 export const siteContent = {
   brand: {
     professionalName: "Flavia Nolasco",
@@ -66,49 +71,49 @@ export const siteContent = {
     photos: [
       {
         id: "ba-1",
-        src: "/gallery/WhatsApp Image 2026-01-17 at 14.12.51.jpeg",
+        src: img("/gallery/WhatsApp Image 2026-01-17 at 14.12.51.jpeg"),
         alt: "Antes e depois - transformação 1",
         caption: "Escova + finalização",
       },
       {
         id: "ba-2",
-        src: "/gallery/WhatsApp Image 2026-01-20 at 13.30.08.jpeg",
+        src: img("/gallery/WhatsApp Image 2026-01-20 at 13.30.08.jpeg"),
         alt: "Antes e depois - transformação 2",
         caption: "Make para evento",
       },
       {
         id: "ba-3",
-        src: "/gallery/screenshot-2026-01-24_21-17-14.png",
+        src: img("/gallery/screenshot-2026-01-24_21-17-14.png"),
         alt: "Antes e depois - transformação 3",
         caption: "Hidratação + corte",
       },
       {
         id: "ba-4",
-        src: "/gallery/screenshot-2026-01-24_21-18-05.png",
+        src: img("/gallery/screenshot-2026-01-24_21-18-05.png"),
         alt: "Antes e depois - transformação 4",
         caption: "Escova polida",
       },
       {
         id: "ba-5",
-        src: "/gallery/screenshot-2026-01-24_21-18-31.png",
+        src: img("/gallery/screenshot-2026-01-24_21-18-31.png"),
         alt: "Antes e depois - transformação 5",
         caption: "Finalização com brilho",
       },
       {
         id: "ba-6",
-        src: "/gallery/screenshot-2026-01-24_21-18-55.png",
+        src: img("/gallery/screenshot-2026-01-24_21-18-55.png"),
         alt: "Antes e depois - transformação 6",
         caption: "Make + cabelo",
       },
       {
         id: "ba-7",
-        src: "/gallery/screenshot-2026-01-24_21-23-04.png",
+        src: img("/gallery/screenshot-2026-01-24_21-23-04.png"),
         alt: "Antes e depois - transformação 7",
         caption: "Penteado para festa",
       },
       {
         id: "ba-8",
-        src: "/gallery/screenshot-2026-01-24_21-23-41.png",
+        src: img("/gallery/screenshot-2026-01-24_21-23-41.png"),
         alt: "Antes e depois - transformação 8",
         caption: "Corte + tratamento",
       }
@@ -282,7 +287,7 @@ export const siteContent = {
       "Cabeleireira e Maquiadora em Lauzane Paulista | Atendimento no salão Salão Martakblo",
     description:
       "Agende cabelo e maquiagem com Flavia Nolasco. Atendimento no salão Salão Martakblo (Lauzane Paulista, São Paulo - SP). Antes e depois, depoimentos e agendamento rápido.",
-    ogImage: "/og/og-image.png",
+    ogImage: img("/og/og-image.png"),
   },
 
   schema: {
