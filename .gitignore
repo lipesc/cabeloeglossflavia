@@ -13,8 +13,14 @@
 # misc
 .DS_Store
 *.pem
+# Ignore image files except in public/gallery
 *.png
 *.jpeg
+!public/gallery/**/*.png
+!public/gallery/**/*.jpeg
+!public/gallery/**/*.jpg
+!public/icons/**/*.png
+!public/og/**/*.png
 # debug
 npm-debug.log*
 yarn-debug.log*
