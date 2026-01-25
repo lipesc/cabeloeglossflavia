@@ -71,3 +71,15 @@ coverage
 .yarn/build-state.yml
 .yarn/install-state.gz
 .yarn/patches
+
+# Sentry Config File
+.env.sentry-build-plugin
+# Sentry example page (local testing only)
+src/app/sentry-example-page/
+src/app/api/sentry-example-api/
+
+# PWA service worker files (generated)
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
