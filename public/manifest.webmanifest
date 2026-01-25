@@ -1,8 +1,8 @@
 {
   "name": "NOME DA SUA MÃE — Cabelo e Maquiagem",
   "short_name": "Salão X",
-  "start_url": "/salao_projeto_v1/?source=pwa",
-  "scope": "/salao_projeto_v1/",
+  "start_url": "/cabeloeglossflavia/?source=pwa",
+  "scope": "/cabeloeglossflavia/",
   "display": "standalone",
   "background_color": "#fff7f0",
   "theme_color": "#e04b36",
