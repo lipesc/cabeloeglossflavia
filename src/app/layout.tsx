@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Playfair_Display, Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 import { siteContent } from "@/content/siteContent";
 import { GTM_ID } from "@/lib/gtm";
@@ -99,6 +100,7 @@ export default function RootLayout({
           </>
         ) : null}
         {children}
+        <Analytics />
       </body>
     </html>
   );
