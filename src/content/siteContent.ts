@@ -274,7 +274,7 @@ export const siteContent = {
     title: "Cabelo e Maquiagem em São Paulo — Agende Agora",
     description:
       "Transformações profissionais no Salão Martakblo. Flavia Nolasco especialista em cabelo e maquiagem para eventos. Agende seu horário.",
-    ogImage: img("/og/og-image-v3.png"),
+    ogImage: img("/og/flavia.jpeg"),
   },
 
   schema: {
