@@ -271,11 +271,10 @@ export const siteContent = {
 
   seo: {
     siteName: "Flavia Nolasco — Cabelo e Maquiagem",
-    title:
-      "Cabeleireira e Maquiadora em Lauzane Paulista | Atendimento no salão Salão Martakblo",
+    title: "Cabelo e Maquiagem em São Paulo — Agende Agora",
     description:
-      "Agende cabelo e maquiagem com Flavia Nolasco. Atendimento no salão Salão Martakblo (Lauzane Paulista, São Paulo - SP). Antes e depois, depoimentos e agendamento rápido.",
-    ogImage: img("/og/og-image-v2.png"),
+      "Transformações profissionais no Salão Martakblo. Flavia Nolasco especialista em cabelo e maquiagem para eventos. Agende seu horário.",
+    ogImage: img("/og/og-image-v3.png"),
   },
 
   schema: {
