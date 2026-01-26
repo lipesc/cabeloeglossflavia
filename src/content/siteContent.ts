@@ -286,6 +286,6 @@ export const siteContent = {
 
   privacy: {
     shortText:
-      "Este site pode usar cookies para métricas de acesso. Links para WhatsApp, Instagram, Calendly, Sentry, Google Tag Manager e SonarCube direcionam para serviços de terceiros.",
+      "Este site pode usar cookies para métricas de acesso. Links para WhatsApp, Instagram, Calendly, Sentry, Google Tag, SonarCube e Vercel direcionam para serviços de terceiros.",
   },
 } as const;
