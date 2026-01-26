@@ -2,15 +2,6 @@
 
 Projeto Next.js 16 (App Router) com TypeScript, Tailwind CSS e Sentry para uma landing page single-scroll focada em conversão mobile-first. Landing page da Flavia Nolasco, especialista em cabelo e maquiagem para eventos no Salão Martakblo.
 
-## Requisitos
-- Node.js 22
-
-## Como rodar (Linux)
-```bash
-npm install
-npm run dev
-```
-Abra `http://localhost:3000`.
 
 ## Estrutura principal
 - `src/app/page.tsx`: página única `/`
