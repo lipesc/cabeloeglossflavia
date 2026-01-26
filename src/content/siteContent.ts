@@ -2,8 +2,6 @@ export type ServiceItem = {
   id: string;
   name: string;
   shortDescription: string;
-  durationMinutes?: number;
-  startingPriceBRL?: number;
   highlight?: boolean;
 };
 
@@ -65,57 +63,57 @@ export const siteContent = {
   },
 
   beforeAfter: {
-    title: "Antes e depois",
+    title: "Transformações",
     subtitle:
       "Resultados reais. Selecione algumas transformações para mostrar seu estilo de trabalho.",
     photos: [
       {
         id: "ba-1",
-        src: img("/gallery/WhatsApp Image 2026-01-17 at 14.12.51.jpeg"),
-        alt: "Antes e depois - transformação 1",
-        caption: "Escova + finalização",
+        src: img("/gallery/salao-video-gif.gif"),
+        alt: "Local do atendimento - salão Martakblo",
+        caption: "Salão Martakblo ✨ Para Sua Transformação completa e Novo visual 💫",
       },
       {
         id: "ba-2",
-        src: img("/gallery/WhatsApp Image 2026-01-20 at 13.30.08.jpeg"),
-        alt: "Antes e depois - transformação 2",
-        caption: "Make para evento",
+        src: img("/gallery/flavia.jpeg"),
+        alt: "Flavia a sua Cabeleireira e Maquiadora",
+        caption: "Flavia a sua Cabeleireira e Maquiadora 😊",
       },
       {
         id: "ba-3",
-        src: img("/gallery/screenshot-2026-01-24_21-17-14.png"),
-        alt: "Antes e depois - transformação 3",
-        caption: "Hidratação + corte",
+        src: img("/gallery/hidratacao-corte.png"),
+        alt: "Hidratação e corte",
+        caption: "💇‍♀️ Corte renovado 💎 Brilho e alinhamento",
       },
       {
         id: "ba-4",
-        src: img("/gallery/screenshot-2026-01-24_21-18-05.png"),
-        alt: "Antes e depois - transformação 4",
-        caption: "Escova polida",
+        src: img("/gallery/escova-polida.png"),
+        alt: "Escova polida",
+        caption: "✨ Brilho e movimento 💫 Acabamento profissional",
       },
       {
         id: "ba-5",
-        src: img("/gallery/screenshot-2026-01-24_21-18-31.png"),
-        alt: "Antes e depois - transformação 5",
-        caption: "Finalização com brilho",
+        src: img("/gallery/Corte-tratamento.jpg"),
+        alt: "Corte e tratamento",
+        caption: "✨ Transformação completa🧴 Hidratação + brilho",
       },
       {
         id: "ba-6",
-        src: img("/gallery/screenshot-2026-01-24_21-18-55.png"),
-        alt: "Antes e depois - transformação 6",
-        caption: "Make + cabelo",
+        src: img("/gallery/Make-cabelo.jpg"),
+        alt: "Maquiagem profissional",
+        caption: "💄 Make profissional 🌸 Make leve e elegant",
       },
       {
         id: "ba-7",
-        src: img("/gallery/screenshot-2026-01-24_21-23-04.png"),
-        alt: "Antes e depois - transformação 7",
-        caption: "Penteado para festa",
+        src: img("/gallery/Penteado-e-make.jpg"),
+        alt: "Penteado para festa",
+        caption: "🌿 Natural e sofisticado 🤍 Beleza realçada",
       },
       {
         id: "ba-8",
-        src: img("/gallery/screenshot-2026-01-24_21-23-41.png"),
-        alt: "Antes e depois - transformação 8",
-        caption: "Corte + tratamento",
+        src: img("/gallery/make-evento.jpg"),
+        alt: "Maquiagem para evento",
+        caption: "☀️ Leve e iluminada 🌼 Acabamento suave",
       }
     ] as BeforeAfterPhoto[],
   },
@@ -129,34 +127,24 @@ export const siteContent = {
         id: "make-evento",
         name: "Maquiagem para evento",
         shortDescription: "Pele bem feita, durabilidade e acabamento profissional.",
-        durationMinutes: 90,
-        startingPriceBRL: 0,
         highlight: true,
       },
       {
         id: "escova",
         name: "Escova + finalização",
         shortDescription: "Brilho, alinhamento e acabamento para o seu estilo.",
-        durationMinutes: 60,
-        startingPriceBRL: 0,
       },
       {
         id: "penteado",
         name: "Penteado",
         shortDescription: "Do clássico ao moderno, ideal para festas e fotos.",
-        durationMinutes: 60,
-        startingPriceBRL: 0,
       },
       {
         id: "hidratacao",
         name: "Hidratação / tratamento",
         shortDescription: "Recuperação, nutrição e maciez para o seu cabelo.",
-        durationMinutes: 60,
-        startingPriceBRL: 0,
       },
     ] as ServiceItem[],
-    priceNote:
-      "Valores podem variar conforme cabelo/tempo do serviço. Confirme no agendamento.",
   },
 
   testimonials: {
@@ -213,11 +201,11 @@ export const siteContent = {
     steps: [
       {
         title: "Escolha o serviço",
-        description: "Veja as opções e selecione o que você precisa.",
+        description: "Veja as opções de serviços",
       },
       {
         title: "Agende em 1 minuto",
-        description: "Clique em ‘Agendar Horário’ e finalize no Calendly.",
+        description: "Clique em ‘Agendar Horário’ e finalize no Calendly, ou agende pelo WhatsApp, Instagram.",
       },
       {
         title: "Atendimento no salão",

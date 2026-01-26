@@ -25,26 +25,9 @@ export function Services() {
                   </span>
                 ) : null}
               </div>
-              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-muted">
-                {service.durationMinutes ? (
-                  <span className="rounded-full bg-base px-3 py-1">
-                    {service.durationMinutes} min
-                  </span>
-                ) : null}
-                {service.startingPriceBRL && service.startingPriceBRL > 0 ? (
-                  <span className="rounded-full bg-base px-3 py-1">
-                    A partir de R$ {service.startingPriceBRL}
-                  </span>
-                ) : (
-                  <span className="rounded-full bg-base px-3 py-1">
-                    Consulte valores
-                  </span>
-                )}
-              </div>
             </article>
           ))}
         </div>
-        <p className="mt-6 text-sm text-muted">{siteContent.services.priceNote}</p>
       </div>
     </section>
   );

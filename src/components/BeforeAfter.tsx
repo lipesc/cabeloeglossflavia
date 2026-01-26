@@ -21,6 +21,7 @@ export function BeforeAfter() {
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition duration-500 group-hover:scale-105"
+                  unoptimized={photo.src.endsWith(".gif")}
                   priority={index < 2}
                 />
               </div>
