@@ -220,7 +220,7 @@ export const siteContent = {
     addressLine1: "Salão Martakblo",
     addressLine2: "Rua Conselheiro Moreira de Barros, 2511 — Lauzane Paulista — São Paulo/SP",
     googleMapsEmbedUrl:
-      "https://www.google.com/maps/embed?pb=SEU_EMBED_AQUI",
+      "https://maps.app.goo.gl/EDe62cCDQ4PtmRxNA",
     note:
       "Atendimento no salão Salão Martakblo. Agendamento e contato direto com Flavia Nolasco.",
   },
