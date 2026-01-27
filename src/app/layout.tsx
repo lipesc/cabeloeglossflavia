@@ -99,6 +99,23 @@ export default function RootLayout({
             </noscript>
           </>
         ) : null}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17907551410"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-ads"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17907551410');
+            `,
+          }}
+        />
         {children}
         <Analytics />
       </body>
