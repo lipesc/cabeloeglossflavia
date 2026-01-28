@@ -69,7 +69,7 @@ export const siteContent = {
     photos: [
       {
         id: "ba-1",
-        src: img("/gallery/salao-video-gif.gif"),
+        src: img("/gallery/salao_local.gif"),
         alt: "Local do atendimento - salão Martakblo",
         caption: "Salão Martakblo ✨ Para Sua Transformação completa e Novo visual 💫",
       },
@@ -81,37 +81,37 @@ export const siteContent = {
       },
       {
         id: "ba-3",
-        src: img("/gallery/hidratacao-corte.png"),
+        src: img("/gallery/hidratacao.jpg"),
         alt: "Hidratação e corte",
         caption: "💇‍♀️ Corte renovado 💎 Brilho e alinhamento",
       },
       {
         id: "ba-4",
-        src: img("/gallery/escova-polida.png"),
+        src: img("/gallery/coloracao1-polida.jpeg"),
         alt: "Escova polida",
         caption: "✨ Brilho e movimento 💫 Acabamento profissional",
       },
       {
         id: "ba-5",
-        src: img("/gallery/Corte-tratamento.jpg"),
+        src: img("/gallery/coloracao-3-tratamento.png"),
         alt: "Corte e tratamento",
         caption: "✨ Transformação completa🧴 Hidratação + brilho",
       },
       {
         id: "ba-6",
-        src: img("/gallery/Make-cabelo.jpg"),
+        src: img("/gallery/make-e-cabelo.jpg"),
         alt: "Maquiagem profissional",
         caption: "💄 Make profissional 🌸 Make leve e elegant",
       },
       {
         id: "ba-7",
-        src: img("/gallery/Penteado-e-make.jpg"),
+        src: img("/gallery/cabelo-transformacao.png"),
         alt: "Penteado para festa",
         caption: "🌿 Natural e sofisticado 🤍 Beleza realçada",
       },
       {
         id: "ba-8",
-        src: img("/gallery/make-evento.jpg"),
+        src: img("/gallery/maquiagem-evento.jpeg"),
         alt: "Maquiagem para evento",
         caption: "☀️ Leve e iluminada 🌼 Acabamento suave",
       }
@@ -127,7 +127,6 @@ export const siteContent = {
         id: "make-evento",
         name: "Maquiagem para evento",
         shortDescription: "Pele bem feita, durabilidade e acabamento profissional.",
-        highlight: true,
       },
       {
         id: "escova",
@@ -143,6 +142,7 @@ export const siteContent = {
         id: "hidratacao",
         name: "Hidratação / tratamento",
         shortDescription: "Recuperação, nutrição e maciez para o seu cabelo.",
+        highlight: true,
       },
     ] as ServiceItem[],
   },
@@ -220,7 +220,7 @@ export const siteContent = {
     addressLine1: "Salão Martakblo",
     addressLine2: "Rua Conselheiro Moreira de Barros, 2511 — Lauzane Paulista — São Paulo/SP",
     googleMapsEmbedUrl:
-      "https://maps.app.goo.gl/EDe62cCDQ4PtmRxNA",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.877328895854!2d-46.6528273!3d-23.4839668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9ed9ac781c00355:0x20374ba27583dc21!2sCabelo%20e%20Gloss%20Flavia!5e0!3m2!1spt-BR!2sbr!4v1704067200000",
     note:
       "Atendimento no salão Salão Martakblo. Agendamento e contato direto com Flavia Nolasco.",
   },

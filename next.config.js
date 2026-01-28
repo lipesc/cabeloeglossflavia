@@ -37,6 +37,9 @@ module.exports = withSentryConfig(module.exports, {
   org: "lipesc-corp",
   project: "javascript-nextjs",
 
+  // Skip source map upload for static exports (they won't be generated)
+  dryRun: isStatic,
+
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
 
