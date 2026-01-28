@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           <div className="flex-1">
             <p>
-              © {new Date().getFullYear()} {siteContent.brand.professionalName}. Todos os direitos
+              © {new Date().getFullYear()} {siteContent.developer.name}. Todos os direitos
               reservados.
             </p>
             <p className="mt-2 max-w-xl">{siteContent.privacy.shortText}</p>
