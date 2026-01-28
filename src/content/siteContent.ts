@@ -287,4 +287,10 @@ export const siteContent = {
     shortText:
       "Este site pode usar cookies para métricas de acesso. Links para WhatsApp, Instagram, Calendly, Sentry, Google Tag, SonarCube e Vercel direcionam para serviços de terceiros.",
   },
+
+  developer: {
+    name: "Felipe Sampaio",
+    github: "https://github.com/lipesc",
+    linkedin: "https://www.linkedin.com/in/felipe-carvalho-19a82b386/",
+  },
 } as const;
