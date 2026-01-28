@@ -40,6 +40,7 @@ export function Hero() {
               sizes="(min-width: 768px) 320px, 90vw"
               className="object-cover"
               priority
+              unoptimized={heroImage.src.endsWith(".gif")}
             />
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,210,200,0.55),rgba(255,255,255,0.2),rgba(255,237,204,0.55))]" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />

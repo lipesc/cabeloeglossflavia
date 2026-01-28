@@ -1,10 +1,11 @@
 import { siteContent } from "@/content/siteContent";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { FlaviaImage } from "@/components/FlaviaImage";
 import { BeforeAfter } from "@/components/BeforeAfter";
 import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
-import { HowItWorks } from "@/components/HowItWorks";
+// import { HowItWorks } from "@/components/HowItWorks";
 import { LocationSection } from "@/components/LocationSection";
 import { FaqSection } from "@/components/FaqSection";
 import { FinalCta } from "@/components/FinalCta";
@@ -63,13 +64,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <FlaviaImage />
         <BeforeAfter />
         <Services />
         <Testimonials />
-        <HowItWorks />
+        {/* <HowItWorks /> */}
         <LocationSection />
-        <FaqSection />
         <FinalCta />
+        <FaqSection />
       </main>
       <Footer />
       <PwaInstallBanner />

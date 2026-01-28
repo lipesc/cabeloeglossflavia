@@ -69,14 +69,20 @@ export const siteContent = {
   },
 
   heroImage: {
-    src: img("/gallery/salao-1.png"),
+    src: img("/gallery/salao_local.gif"),
     alt: "Imagem do salão Martakblo",
+  },
+
+  flaviaImage: {
+    src: img("/gallery/flavia.jpeg"),
+    alt: "Flavia a sua Cabeleireira e Maquiadora",
+    caption: "Flavia a sua Cabeleireira e Maquiadora 😊",
   },
 
   beforeAfter: {
     title: "Transformações",
     subtitle:
-      "Resultados reais. Selecione algumas transformações para mostrar seu estilo de trabalho.",
+      "Sua Transformação completa",
     photos: [
       {
         id: "ba-1",
@@ -86,74 +92,84 @@ export const siteContent = {
       },
       {
         id: "ba-2",
-        src: img("/gallery/flavia.jpeg"),
-        alt: "Flavia a sua Cabeleireira e Maquiadora",
-        caption: "Flavia a sua Cabeleireira e Maquiadora 😊",
-      },
-      {
-        id: "ba-3",
         src: img("/gallery/hidratacao.jpg"),
-        alt: "Hidratação e corte",
+        alt: "Tratamento",
         caption: "💇‍♀️ Corte renovado 💎 Brilho e alinhamento",
       },
       {
-        id: "ba-4",
+        id: "ba-3",
         src: img("/gallery/coloracao1-polida.jpeg"),
-        alt: "Escova polida",
+        alt: "Tratamento",
         caption: "✨ Brilho e movimento 💫 Acabamento profissional",
       },
       {
-        id: "ba-5",
+        id: "ba-4",
         src: img("/gallery/coloracao-3-tratamento.png"),
-        alt: "Corte e tratamento",
-        caption: "✨ Transformação completa🧴 Hidratação + brilho",
+        alt: "Mechas",
+        caption: "✨ Mechas e tratamento de hidratação de brilho 🧴 Hidratação + brilho",
+      },
+      {
+        id: "ba-5",
+        src: img("/gallery/coloracao2-1.jpeg"),
+        alt: "Mechas",
+        caption: "✨ Mechas e tratamento de hidratação de brilho 🧴 Hidratação + brilho",
       },
       {
         id: "ba-6",
+        src: img("/gallery/coloracao2-2.jpeg"),
+        alt: "Mechas",
+        caption: "✨ Mechas e tratamento de hidratação de brilho 🧴 Hidratação + brilho",
+      },
+      {
+        id: "ba-7",
         src: img("/gallery/make-e-cabelo.jpg"),
         alt: "Maquiagem profissional",
         caption: "💄 Make profissional 🌸 Make leve e elegant",
       },
       {
-        id: "ba-7",
+        id: "ba-9",
         src: img("/gallery/cabelo-transformacao.png"),
         alt: "Penteado para festa",
         caption: "🌿 Natural e sofisticado 🤍 Beleza realçada",
       },
-      {
-        id: "ba-8",
-        src: img("/gallery/maquiagem-evento.jpeg"),
-        alt: "Maquiagem para evento",
-        caption: "☀️ Leve e iluminada 🌼 Acabamento suave",
-      }
     ] as BeforeAfterPhoto[],
   },
 
-  services: {
+services: {
     title: "Serviços",
     subtitle:
       "Escolha o serviço e clique em agendar. Se preferir, fale direto no WhatsApp.",
     items: [
       {
-        id: "make-evento",
-        name: "Maquiagem para evento",
-        shortDescription: "Pele bem feita, durabilidade e acabamento profissional.",
+        id: "mechas",
+        name: "Mechas e Iluminação",
+        shortDescription: "Visual de alto impacto. Técnicas exclusivas de loiros e iluminação que valorizam sua beleza.",
+        highlight: true,
       },
       {
-        id: "escova",
-        name: "Escova + finalização",
-        shortDescription: "Brilho, alinhamento e acabamento para o seu estilo.",
+        id: "coloracao",
+        name: "Coloração / Colorimetria",
+        shortDescription: "Serviço de Colorista. Análise profunda e tons personalizados que você não consegue em casa.",
+      },
+      {
+        id: "make-evento",
+        name: "Maquiagem para evento",
+        shortDescription: "Pele blindada, durabilidade e acabamento profissional para fotos.",
       },
       {
         id: "penteado",
         name: "Penteado",
-        shortDescription: "Do clássico ao moderno, ideal para festas e fotos.",
+        shortDescription: "Do clássico ao moderno, ideal para festas e eventos especiais.",
+      },
+      {
+        id: "escova",
+        name: "Escova + finalização",
+        shortDescription: "Brilho, alinhamento e acabamento de salão.",
       },
       {
         id: "hidratacao",
         name: "Hidratação / tratamento",
-        shortDescription: "Recuperação, nutrição e maciez para o seu cabelo.",
-        highlight: true,
+        shortDescription: "Reposição de nutrientes e manutenção da saúde dos fios.",
       },
     ] as ServiceItem[],
   },
@@ -207,24 +223,24 @@ export const siteContent = {
     ] as TestimonialItem[],
   },
 
-  howItWorks: {
-    title: "Como funciona",
-    steps: [
-      {
-        title: "Escolha o serviço",
-        description: "Veja as opções de serviços",
-      },
-      {
-        title: "Agende em 1 minuto",
-        description: "Clique em ‘Agendar Horário’ e finalize no Calendly, ou agende pelo WhatsApp, Instagram.",
-      },
-      {
-        title: "Atendimento no salão",
-        description:
-          "Atendimento no salão Salão Martakblo (Lauzane Paulista, São Paulo - SP), com horário marcado.",
-      },
-    ],
-  },
+  // howItWorks: {
+  //   title: "Como funciona",
+  //   steps: [
+  //     {
+  //       title: "Escolha o serviço",
+  //       description: "Veja as opções de serviços",
+  //     },
+  //     {
+  //       title: "Agende em 1 minuto",
+  //       description: "Clique em ‘Agendar Horário’ e finalize no Calendly, ou agende pelo WhatsApp, Instagram.",
+  //     },
+  //     {
+  //       title: "Atendimento no salão",
+  //       description:
+  //         "Atendimento no salão Salão Martakblo (Lauzane Paulista, São Paulo - SP), com horário marcado.",
+  //     },
+  //   ],
+  // },
 
   location: {
     title: "Local e atendimento",

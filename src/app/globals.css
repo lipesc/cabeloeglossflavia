@@ -19,9 +19,9 @@ body {
   font-family: var(--font-sans);
   color: hsl(var(--color-ink));
   background:
-    radial-gradient(70% 60% at 10% 10%, rgba(255, 214, 188, 0.7), transparent 60%),
-    radial-gradient(80% 70% at 90% 0%, rgba(255, 233, 201, 0.7), transparent 60%),
-    linear-gradient(180deg, #fff7f0 0%, #fff 45%, #fff7f0 100%);
+    radial-gradient(70% 60% at 10% 10%, rgba(253, 188, 255, 0.795), transparent 60%),
+    radial-gradient(80% 70% at 90% 0%, rgba(250, 201, 255, 0.829), transparent 60%),
+    linear-gradient(180deg, #fff0fc 0%, #ffffff 45%, #fff0f6 100%);
   min-height: 100vh;
 }
 
