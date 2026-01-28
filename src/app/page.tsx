@@ -7,7 +7,7 @@ import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
 // import { HowItWorks } from "@/components/HowItWorks";
 import { LocationSection } from "@/components/LocationSection";
-import { FaqSection } from "@/components/FaqSection";
+// import { FaqSection } from "@/components/FaqSection";
 import { FinalCta } from "@/components/FinalCta";
 import { Footer } from "@/components/Footer";
 import { PwaInstallBanner } from "@/components/PwaInstallBanner";
@@ -71,7 +71,7 @@ export default function Home() {
         {/* <HowItWorks /> */}
         <LocationSection />
         <FinalCta />
-        <FaqSection />
+        {/* <FaqSection /> */}
       </main>
       <Footer />
       <PwaInstallBanner />
