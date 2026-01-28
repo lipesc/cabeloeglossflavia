@@ -49,16 +49,10 @@ export function Hero() {
               <p className="font-display text-2xl text-white drop-shadow-sm">
                 {siteContent.brand.salonName} — {siteContent.brand.neighborhood}
               </p>
-              {/* <p className="text-sm text-white/85 drop-shadow-sm">
-                {siteContent.brand.professionalName}
-              </p> */}
             </div>
           </div>
-          <div className="absolute -right-8 -top-10 hidden rounded-full bg-white/70 px-5 py-3 text-sm text-muted shadow-soft md:block">
-            Disponível para eventos e ensaios
           </div>
         </div>
-      </div>
     </section>
   );
 }

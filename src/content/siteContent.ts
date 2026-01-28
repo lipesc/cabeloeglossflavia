@@ -42,7 +42,7 @@ export const siteContent = {
     professionalName: "Flavia Nolasco",
     headline: "Cabelo e maquiagem com acabamento impecável",
     subheadline:
-      "Agendamento direto com Flavia Nolasco. Atendimento no salão Salão Martakblo R. Conselheiro Moreira de Barros, 2511 - Lauzane Paulista, São Paulo - SP, 02430-001.",
+      "Agendamento com Flavia Nolasco. Atendimento no salão Salão Martakblo R. Conselheiro Moreira de Barros, 2511 - Lauzane Paulista, São Paulo - SP, 02430-001.",
     city: " São Paulo - SP",
     neighborhood: "Lauzane Paulista",
     salonName: "Salão Martakblo",
@@ -98,9 +98,9 @@ export const siteContent = {
       },
       {
         id: "ba-3",
-        src: img("/gallery/coloracao1-polida.jpeg"),
+        src: img("/gallery/coloracao1-mecha.png"),
         alt: "Tratamento",
-        caption: "✨ Brilho e movimento 💫 Acabamento profissional",
+        caption: "✨ Mechas Brilho e movimento 💫 Acabamento profissional",
       },
       {
         id: "ba-4",
@@ -124,13 +124,13 @@ export const siteContent = {
         id: "ba-7",
         src: img("/gallery/make-e-cabelo.jpg"),
         alt: "Maquiagem profissional",
-        caption: "💄 Make profissional 🌸 Make leve e elegant",
+        caption: "💄 Make profissional 🌸 Make leve e elegante",
       },
       {
         id: "ba-9",
         src: img("/gallery/cabelo-transformacao.png"),
-        alt: "Penteado para festa",
-        caption: "🌿 Natural e sofisticado 🤍 Beleza realçada",
+        alt: "Mechas Penteado para festa",
+        caption: "🌿 Mechas Naturais e sofisticadas 🤍 Beleza realçada",
       },
     ] as BeforeAfterPhoto[],
   },
@@ -138,7 +138,7 @@ export const siteContent = {
 services: {
     title: "Serviços",
     subtitle:
-      "Escolha o serviço e clique em agendar. Se preferir, fale direto no WhatsApp.",
+      "Escolha o serviço e clique em agendar. Se preferir, fale direto no WhatsApp ou Instagram DM.",
     items: [
       {
         id: "mechas",
@@ -176,7 +176,6 @@ services: {
 
   testimonials: {
     title: "O que as clientes dizem",
-    subtitle: "Depoimentos curtos ajudam muito a converter.",
     items: [
       {
         id: "t-1",
