@@ -62,7 +62,7 @@ export const siteContent = {
   trust: {
     bullets: [
       "Atendimento no salão Salão Martakblo (Lauzane Paulista, São Paulo - SP)",
-      "Agendamento direto com Flavia Nolasco",
+      "Agendamento com Flavia Nolasco",
       "Especialista em cabelo e maquiagem para eventos",
     ],
     stats: [],
@@ -122,7 +122,7 @@ export const siteContent = {
       },
       {
         id: "ba-7",
-        src: img("/gallery/make-e-cabelo.jpg"),
+        src: img("/gallery/make-e-cabelo.jpeg"),
         alt: "Maquiagem profissional",
         caption: "💄 Make profissional 🌸 Make leve e elegante",
       },
