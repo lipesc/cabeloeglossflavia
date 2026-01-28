@@ -28,8 +28,8 @@ export function Footer() {
               >
                 <img
                   src="/icons/github.svg"
-                  alt="GitHub"
-                  className="h-5 w-5"
+                  alt="GitHub logo"
+                  className="h-14 w-14"
                 />
               </a>
               <a
@@ -41,8 +41,8 @@ export function Footer() {
               >
                 <img
                   src="/icons/linkedin.png"
-                  alt="LinkedIn"
-                  className="h-5 w-5"
+                  alt="LinkedIn logo"
+                  className="h-5 w-5 translate-y-3.5"
                 />
               </a>
             </div>
