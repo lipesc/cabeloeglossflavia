@@ -4,16 +4,16 @@ import { siteContent } from "@/content/siteContent";
 import { CtaGroup } from "@/components/CtaGroup";
 
 export function Hero() {
-  const heroImage = siteContent.beforeAfter.photos[1];
+  const heroImage = siteContent.heroImage;
 
   return (
     <section id="inicio" className="relative overflow-hidden">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-16 pt-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
         <div>
-          <div className="flex flex-wrap items-center gap-3">
+          {/* <div className="flex flex-wrap items-center gap-3">
             <span className="chip">Atendimento no salão {siteContent.brand.salonName}</span>
             <span className="chip">Agendamento direto com {siteContent.brand.professionalName}</span>
-          </div>
+          </div> */}
           <h1 className="mt-6 font-display text-4xl font-semibold leading-tight text-ink md:text-5xl">
             {siteContent.brand.headline}
           </h1>
@@ -44,13 +44,13 @@ export function Hero() {
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,210,200,0.55),rgba(255,255,255,0.2),rgba(255,237,204,0.55))]" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />
             <div className="absolute inset-0 flex flex-col items-start justify-end gap-3 p-6 text-white">
-              <p className="text-sm uppercase tracking-widest text-white/80 drop-shadow-sm">Agenda rápida</p>
+              {/* <p className="text-sm uppercase tracking-widest text-white/80 drop-shadow-sm">Agenda rápida</p> */}
               <p className="font-display text-2xl text-white drop-shadow-sm">
                 {siteContent.brand.salonName} — {siteContent.brand.neighborhood}
               </p>
-              <p className="text-sm text-white/85 drop-shadow-sm">
-                {siteContent.brand.city} · Agendamento direto com {siteContent.brand.professionalName}
-              </p>
+              {/* <p className="text-sm text-white/85 drop-shadow-sm">
+                {siteContent.brand.professionalName}
+              </p> */}
             </div>
           </div>
           <div className="absolute -right-8 -top-10 hidden rounded-full bg-white/70 px-5 py-3 text-sm text-muted shadow-soft md:block">

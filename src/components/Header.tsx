@@ -7,7 +7,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <div>
           <p className="font-display text-lg font-semibold text-ink">
-            {siteContent.brand.professionalName}
+          {siteContent.brand.professionalName}
           </p>
           <p className="text-xs text-muted">
             Atendimento no salão {siteContent.brand.salonName} ({siteContent.brand.neighborhood}/

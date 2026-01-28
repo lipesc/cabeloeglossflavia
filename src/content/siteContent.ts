@@ -26,6 +26,12 @@ export type BeforeAfterPhoto = {
   caption?: string;
 };
 
+export type HeroImage = {
+  src: string;
+  alt: string;
+};
+
+
 import { getAssetPath } from "@/lib/paths";
 
 // Helper to add basePath to image URLs
@@ -60,6 +66,11 @@ export const siteContent = {
       "Especialista em cabelo e maquiagem para eventos",
     ],
     stats: [],
+  },
+
+  heroImage: {
+    src: img("/gallery/salao-1.png"),
+    alt: "Imagem do salão Martakblo",
   },
 
   beforeAfter: {
