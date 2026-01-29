@@ -50,7 +50,7 @@ export const siteContent = {
 
   links: {
     instagramProfileUrl: "https://instagram.com/cabeloeglossflavia",
-    whatsappNumberE164: "https://wa.me/5511951352996",
+    whatsappNumberE164: "https://wa.me/551151929194",
     calendlyUrl: "https://calendly.com/cabeloeglossflavia/30min",
   },
 
