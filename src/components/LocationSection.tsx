@@ -1,7 +1,16 @@
+"use client";
+
 import { siteContent } from "@/content/siteContent";
 import { SectionHeader } from "@/components/SectionHeader";
 
 export function LocationSection() {
+  const handleMapClick = () => {
+    // Google Ads conversion tracking
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      (window as any).gtag_report_conversion(undefined);
+    }
+  };
+
   return (
     <section id="local" className="py-16">
       <div className="mx-auto grid max-w-6xl gap-8 px-6 md:grid-cols-[1fr_1.1fr]">
@@ -17,7 +26,10 @@ export function LocationSection() {
             <p className="mt-4 text-sm text-muted">{siteContent.location.note}</p>
           </div>
         </div>
-        <div className="overflow-hidden rounded-2xl border border-white/70 bg-white shadow-soft">
+        <div 
+          className="overflow-hidden rounded-2xl border border-white/70 bg-white shadow-soft"
+          onClick={handleMapClick}
+        >
           <iframe
             title="Mapa do salão"
             src={siteContent.location.googleMapsEmbedUrl}

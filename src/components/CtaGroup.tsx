@@ -66,6 +66,11 @@ function CtaGroupInner({ variant = "full", align = "left" }: Readonly<CtaGroupPr
   const handleCalendlyClick = (event: MouseEvent) => {
     event.preventDefault();
     pushDataLayer("click_calendly", { label: calendlyUrl });
+    
+    // Google Ads conversion tracking
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      (window as any).gtag_report_conversion(undefined);
+    }
 
     if (typeof globalThis.window === "undefined") return;
 
@@ -86,12 +91,26 @@ function CtaGroupInner({ variant = "full", align = "left" }: Readonly<CtaGroupPr
     window.open(calendlyUrl, "_blank", "noopener,noreferrer");
   };
 
-  const handleWhatsAppClick = () => {
+  const handleWhatsAppClick = (event: MouseEvent) => {
     pushDataLayer("click_whatsapp", { label: whatsappUrl });
+    
+    // Google Ads conversion tracking
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      event.preventDefault();
+      (window as any).gtag_report_conversion(whatsappUrl);
+      return false;
+    }
   };
 
-  const handleInstagramClick = () => {
+  const handleInstagramClick = (event: MouseEvent) => {
     pushDataLayer("click_instagram", { label: instagramUrl });
+    
+    // Google Ads conversion tracking
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      event.preventDefault();
+      (window as any).gtag_report_conversion(instagramUrl);
+      return false;
+    }
   };
 
   return (
