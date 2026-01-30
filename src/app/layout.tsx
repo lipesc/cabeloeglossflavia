@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { siteContent } from "@/content/siteContent";
 import { GTM_ID } from "@/lib/gtm";
 import { getAssetPath } from "@/lib/paths";
+import { ConsentBanner } from "@/components/ConsentBanner";
 
 import * as Sentry from '@sentry/nextjs';
 
@@ -111,6 +112,13 @@ export default function RootLayout({
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                ad_storage: 'denied',
+                analytics_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                wait_for_update: 500
+              });
               gtag('js', new Date());
               gtag('config', 'AW-17907551410', {
                 'page_path': window.location.pathname,
@@ -132,6 +140,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <ConsentBanner />
         {children}
         <Analytics />
       </body>
