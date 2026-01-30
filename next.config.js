@@ -23,6 +23,8 @@ const nextConfig = {
     // Next Image optimization is not supported with static export
     unoptimized: isStatic,
   },
+  // Disable source maps in production to avoid 404 errors
+  productionBrowserSourceMaps: false,
 };
 
 module.exports = withPWA(nextConfig);

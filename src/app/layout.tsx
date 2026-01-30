@@ -102,17 +102,20 @@ export default function RootLayout({
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17907551410"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
         <Script
           id="google-ads"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-17907551410');
+              gtag('config', 'AW-17907551410', {
+                'page_path': window.location.pathname,
+                'anonymize_ip': true
+              });
               
               function gtag_report_conversion(url) {
                 var callback = function () {
