@@ -29,7 +29,8 @@ function updateConsent(consent: typeof defaultConsent) {
 }
 
 export function ConsentBanner() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [isClient, setIsClient] = useState(false);
 
   const acceptConsent = useMemo(
     () => ({
@@ -42,16 +43,18 @@ export function ConsentBanner() {
   );
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    setIsClient(true);
 
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored === "granted") {
       updateConsent(acceptConsent);
+      setVisible(false);
       return;
     }
 
     if (stored === "denied") {
       updateConsent(defaultConsent);
+      setVisible(false);
       return;
     }
 
@@ -70,7 +73,7 @@ export function ConsentBanner() {
     setVisible(false);
   };
 
-  if (!visible) return null;
+  if (!isClient || !visible) return null;
 
   return (
     <div className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-3xl rounded-2xl border border-white/70 bg-white p-5 shadow-soft">
