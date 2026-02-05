@@ -10,8 +10,6 @@ import { GTM_ID } from "@/lib/gtm";
 import { getAssetPath } from "@/lib/paths";
 import { ConsentBanner } from "@/components/ConsentBanner";
 
-import * as Sentry from '@sentry/nextjs';
-
 const display = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
@@ -57,9 +55,6 @@ export const metadata: Metadata = {
     description: siteContent.seo.description,
     images: [siteContent.seo.ogImage],
   },
-  other: {
-  ...Sentry.getTraceData()
-}
 };
 
 export const viewport: Viewport = {

@@ -38,7 +38,6 @@ src/
   Schema.org JSON LD automático BeautySalon + Service
 
 **Monitoramento:**
-  Sentry errors + performance
   Google Tag Manager event tracking
   Vercel Analytics Web Vitals
 
@@ -48,3 +47,7 @@ src/
   Responsiva mobile first
   SEO otimizado sitemap, OG, schema
   Suporta Vercel dinâmica e GitHub Pages estática
+
+## Build / deploy
+
+**Deprecation warnings:** `npm install` e o deploy podem mostrar avisos de `glob` ou `inflight` (dependências transitivas de `next-pwa`/workbox). São inofensivos.
